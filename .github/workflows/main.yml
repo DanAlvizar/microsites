@@ -18,7 +18,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: registry.sub.omnitracs.online/testweb:latest
+          tags: registry.sub.omnitracs.online/dan:latest
       - name: REST API with curl
         run: |
           curl -H "Authorization: Bearer omnitracssolera" https://watch.sub.omnitracs.online/v1/update
